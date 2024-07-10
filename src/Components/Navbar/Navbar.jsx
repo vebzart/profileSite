@@ -21,9 +21,9 @@ function Navbar() {
         </div>
         <div ref={menuRef} className='navOptions'>
         <ul ref={menuRef} className='navMenu'>
-            <li onClick={()=>{setMenu("home")}}>Home{menu==="home"?<hr />:<></>}</li>
+            <li onClick={()=>{setMenu("home")}}><Link to="/profileSite" style={{textDecoration:"none",color:"white"}}>Home</Link>{menu==="home"?<hr />:<></>}</li>
             <li onClick={()=>{setMenu("about")}}>about{menu==="about"?<hr />:<></>}</li>
-            <li onClick={()=>{setMenu("work")}}><Link to="profileSite/work" style={{textDecoration:"none",color:"white"}}>work{menu==="work"?<hr />:<></>}</Link></li>
+            <li onClick={()=>{setMenu("work")}}><Link to="profileSite/work" style={{textDecoration:"none",color:"white"}}>work</Link>{menu==="work"?<hr />:<></>}</li>
         </ul>
         
             <button className='navLogin'>Login</button>

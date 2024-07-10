@@ -36,3 +36,9 @@
 .footerIconContainer:hover{
     background-color: rgba(145, 143, 143,0.4);
 }
+@media(max-width:600px){
+    .footerLinks{
+        gap:10px;
+        justify-content: center;
+    }
+}
